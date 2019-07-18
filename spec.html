@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    WRITING SPECIFICATIONS
+    In this page, we’ll cover everything you need to know about writing Gauge specification. Before we start, do take a
+    look at the IDE plugins for Gauge that improve your test authoring experience.
+
+    <h2>
+        Step Implementaion
+    </h2>
+    <div class="javascript hidden">
+        <pre>
+            <h4>Javascript</h4>
+            <code>
+                    @step("Say <greeting> to <product name>")
+                            def hello_world(greeting, name):
+                                assert False, "Add implementation code"
+        </code>
+    </pre>
+    </div>
+    <div class="python hidden">
+            <pre>
+                <h4>Python</h4>
+                <code>
+                        @step("Say <greeting> to <product name>")
+                                def hello_world(greeting, name):
+                                    assert False, "Add implementation code"
+            </code>
+        </pre>
+        </div>
+    <div class="java hidden">
+        <pre>
+            <h4>Java</h4>
+            <code>
+                This Method can be written in any java class as long as it is in classpath.
+
+                public class StepImplementation {
+                    @Step("Say <greeting> to <product name>")
+                        public void helloWorld(String greeting, String name) {
+                            // Step implementation
+                        }
+                    }
+                </code>
+            </pre>
+    </div>
+
+</body>
+
+</html>
